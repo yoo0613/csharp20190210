@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace Shapes
 {
@@ -17,6 +18,10 @@ namespace Shapes
         public double Area()
         {
             return Math.PI * (radius * radius);
+        }
+        public void Draw()
+        {
+            Pen p = new Pen(Color.Red);
         }
     }
 }
